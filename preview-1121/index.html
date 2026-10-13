@@ -113,12 +113,15 @@
     </div>
     <div class="register-card"><div class="register-top"><h3>預留你的席位</h3><span>11.21 · FORM PREVIEW</span></div>
       <form id="registrationForm" novalidate>
-        <div class="field-grid"><div class="field"><label for="fullName">姓名 <span class="req">*</span></label><input id="fullName" name="name" required autocomplete="name" placeholder="請輸入你的姓名"></div><div class="field"><label for="region">所在地區</label><select id="region" name="region"><option value="">請選擇所在地區</option><option>香港</option><option>馬來西亞</option><option>台灣</option><option>澳門</option><option>新加坡</option><option>其他地區</option></select></div><div class="field"><label for="email">電子郵箱 <span class="req">*</span></label><input type="email" required id="email" name="email" autocomplete="email" placeholder="you@example.com"></div><div class="field"><label for="whatsapp">WhatsApp（選填）</label><input type="tel" id="whatsapp" name="whatsapp" autocomplete="tel" placeholder="包括國際區號"></div></div>
-        <fieldset class="group"><legend>你最近最想放下的是甚麼？ <span class="req">*</span></legend><div class="focus-options"><label><input type="radio" name="focusArea" value="工作與金錢的反覆思緒" required>工作與金錢的反覆思緒</label><label><input type="radio" name="focusArea" value="關係中的拉扯與擔心">關係中的拉扯與擔心</label><label><input type="radio" name="focusArea" value="對未來的不安">對未來的不安</label><label><input type="radio" name="focusArea" value="很難真正安靜下來">很難真正安靜下來</label><label><input type="radio" name="focusArea" value="其他">其他</label></div><div class="other-wrap hidden" id="otherWrap"><div class="field"><label for="focusOther">你想補充甚麼？（選填）</label><textarea id="focusOther" name="focusOther" placeholder="只需分享你願意說的部分"></textarea></div></div></fieldset>
-        <div class="consents"><div class="group-label">通知與訂閱選擇</div><label><input type="checkbox" name="eventConsent" value="yes" required><span><strong>本次活動通知（必選）</strong>　我同意接收《心之歸位》報名確認、Zoom 資訊及相關必要通知。</span></label><label><input type="checkbox" name="updatesConsent" value="yes"><span><strong>日後活動消息（選填）</strong>　我願意接收 Joyfulness Path 日後課程及活動資訊。</span></label><label><input type="checkbox" name="newsletterConsent" value="yes"><span><strong>Winnie Newsletter（選填）</strong>　我願意收到 Winnie 的電子報及分享內容。</span></label></div>
-        <p class="consent-help">日後消息及 Newsletter 會分開記錄同意；不勾選不影響本次活動登記。正式版會連接 Winnie 現有的同意紀錄與私隱條款。</p>
-        <button class="send-button" type="submit">模擬送出報名資料　↗</button><div id="formAlert" role="status" aria-live="polite" class="form-alert hidden"></div>
-        <p class="form-foot">目前僅作 UI 預覽，不會保存或傳送個人資料。正式開放前須建立獨立 11.21 活動，驗證 Email 確認及提醒系統。</p>
+        <div class="field-grid"><div class="field"><label for="fullName">姓名 <span class="req">*</span></label><input id="fullName" name="name" maxlength="120" required autocomplete="name" placeholder="請輸入你的姓名"></div><div class="field"><label for="region">所在地區</label><select id="region" name="region" required><option value="">請選擇所在地區</option><option>香港</option><option>馬來西亞</option><option>台灣</option><option>澳門</option><option>新加坡</option><option>其他地區</option></select></div><div class="field"><label for="email">電子郵箱 <span class="req">*</span></label><input type="email" required id="email" name="email" maxlength="240" autocomplete="email" placeholder="you@example.com"></div><div class="field"><label for="whatsapp">WhatsApp（選填）</label><input type="tel" id="whatsapp" name="whatsapp" maxlength="50" autocomplete="tel" placeholder="包括國際區號"></div></div>
+        <fieldset class="group"><legend>你最近最想放下的是甚麼？ <span class="req">*</span></legend><div class="focus-options"><label><input type="radio" name="focusArea" value="工作與金錢的反覆思緒" required>工作與金錢的反覆思緒</label><label><input type="radio" name="focusArea" value="關係中的拉扯與擔心">關係中的拉扯與擔心</label><label><input type="radio" name="focusArea" value="對未來的不安">對未來的不安</label><label><input type="radio" name="focusArea" value="很難真正安靜下來">很難真正安靜下來</label><label><input type="radio" name="focusArea" value="其他">其他</label></div><div class="other-wrap hidden" id="otherWrap"><div class="field"><label for="focusOther">你想補充甚麼？（選填）</label><textarea id="focusOther" name="focusOther" maxlength="500" placeholder="只需分享你願意說的部分"></textarea></div></div></fieldset>
+        <div class="consents"><div class="group-label">通知與訂閱選擇</div><label><input type="checkbox" name="eventConsent" value="yes" required><span><strong>本次活動通知（必選）</strong>　我同意接收《心之歸位》報名確認、Zoom 資訊及相關必要通知。</span></label><label><input type="checkbox" name="updatesConsent" value="yes"><span><strong>日後活動消息（選填）</strong>　我願意接收 Joyfulness Path 日後課程及活動資訊。</span></label><label><input type="checkbox" name="newsletterConsent" value="yes"><span><strong>Winnie Newsletter（選填）</strong>　我願意收到 Winnie 的電子報及分享內容。</span></label></div><div class="consents"><div class="group-label">報名條款與資料使用（必選）</div>
+<label><input type="checkbox" name="terms" value="yes" required><span>我已閱讀並同意 <a href="https://joyfulnesspath.com/terms/" target="_blank" rel="noopener noreferrer">活動條款</a>。</span></label>
+<label><input type="checkbox" name="privacy" value="yes" required><span>我已閱讀 <a href="https://joyfulnesspath.com/privacy/" target="_blank" rel="noopener noreferrer">私隱政策</a>，同意為本次活動處理所提供的報名資料及必要跨境傳輸。</span></label>
+<label><input type="checkbox" name="activityNotice" value="yes" required><span>我明白選擇的關注主題或補充文字可能涉及個人敏感資料，並明確同意主辦方只為本次活動安排而處理；我可以不填補充文字。</span></label>
+<label><input type="checkbox" name="nature" value="yes" required><span>我明白這是免費冥想與分享活動，活動內容不能代替專業建議，並可按自身舒適程度參與。</span></label></div><p class="consent-help">日後消息及 Newsletter 會分開記錄同意；不勾選不影響本次活動登記。報名資料只用作活動安排；日後活動消息與 Newsletter 各自獨立、自願選擇。</p>
+        <button class="send-button" id="submitRegistration" type="submit">預覽報名流程　↗</button><div id="formAlert" role="status" aria-live="polite" class="form-alert hidden"></div>
+        <p class="form-foot">報名功能尚未正式啟用。確認信及提醒信完成內部驗收後才會開放。</p>
       </form>
     </div></div>
   </section>
@@ -140,7 +143,68 @@
  navLinks?.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nav.setAttribute('aria-expanded','false');navLinks.classList.remove('open');nav.textContent='☰'}));
  const mv=document.getElementById('playMv');mv?.addEventListener('click',()=>{if(mv.querySelector('iframe'))return;const frame=document.createElement('iframe');frame.src='https://www.youtube-nocookie.com/embed/XbuYmnkTc8M?autoplay=1&rel=0';frame.allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; web-share';frame.referrerPolicy='strict-origin-when-cross-origin';frame.title='心之歸位官方 MV';frame.allowFullscreen=true;mv.appendChild(frame)});
  const form=document.getElementById('registrationForm'),alert=document.getElementById('formAlert'),other=document.getElementById('otherWrap');form.querySelectorAll('input[name="focusArea"]').forEach(r=>r.addEventListener('change',()=>other.classList.toggle('hidden',form.querySelector('input[name="focusArea"]:checked')?.value!=='其他')));
- form.addEventListener('submit',(e)=>{e.preventDefault();if(!form.reportValidity())return;const data=new FormData(form);const focus=data.get('focusArea');const name=String(data.get('name')||'').trim();if(!name){document.getElementById('fullName').focus();return} const updates=data.get('updatesConsent')?'已選擇':'未選擇';const newsletter=data.get('newsletterConsent')?'已選擇':'未選擇';alert.classList.remove('hidden');alert.textContent=`僅供預覽：${name}，你的模擬選擇是「${focus}」；日後活動消息：${updates}；Newsletter：${newsletter}。沒有任何資料被保存、傳送或寄出。`;alert.scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth',block:'nearest'})});
+ const HEART_RETURN_REGISTRATION = Object.freeze({
+  eventId:'chamuel-2026-11-21',
+  endpoint:'https://script.google.com/macros/s/AKfycbzEHNWnXvWTBx4LBKvW68hKUxyUxWkd3xgo1f9jqOa0reS-_X7nTEN2pZiwgTbdImmJ/exec',
+  source:'heart-return-1121',
+  enabled:false,
+  formLanguage:'zh-Hant',
+  consentVersions:{terms:'JP-TERMS-ZH-1.2',privacy:'JP-PRIVACY-ZH-1.1',pics:'JP-PICS-ZH-1.1',sensitive:'JP-SENSITIVE-ZH-1.0',crossBorder:'JP-XBORDER-ZH-1.1',wellbeing:'JP-WELLBEING-ZH-1.0',consent:'JP-CONSENT-ZH-1.2'}
+});
+const regButton=document.getElementById('submitRegistration');
+let sending=false;
+const showFormStatus=(msg,isError)=>{
+ alert.classList.remove('hidden');
+ alert.textContent=msg;
+ alert.setAttribute('role',isError?'alert':'status');
+ alert.style.color=isError?'#8C3942':'#254238';
+ alert.scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth',block:'nearest'});
+};
+form.addEventListener('submit',async(e)=>{
+ e.preventDefault();
+ if(sending||!form.reportValidity())return;
+ const fields=new FormData(form);
+ if(!HEART_RETURN_REGISTRATION.enabled){
+  showFormStatus('11月21日報名尚未正式開放。這是設計預覽，沒有保存、傳送或寄出任何資料。',false);
+  return;
+ }
+ const has=(key)=>fields.get(key)==='yes';
+ if(!['eventConsent','terms','privacy','activityNotice','nature'].every(has)){
+  showFormStatus('請先確認本次活動通知及必須同意的報名條款。',true);return;
+ }
+ const focus=String(fields.get('focusArea')||'').trim();
+ const payload={
+  eventId:HEART_RETURN_REGISTRATION.eventId,
+  name:String(fields.get('name')||'').trim().slice(0,120),
+  email:String(fields.get('email')||'').trim().toLowerCase().slice(0,240),
+  whatsapp:String(fields.get('whatsapp')||'').trim().slice(0,50),
+  region:String(fields.get('region')||'').trim().slice(0,80),
+  focusArea:focus,
+  focusOther:focus==='其他'?String(fields.get('focusOther')||'').trim().slice(0,500):'',
+  eventConsent:true, updatesConsent:has('updatesConsent'),newsletterConsent:has('newsletterConsent'),
+  terms:true,privacy:true,activityNotice:true,nature:true,
+  source:HEART_RETURN_REGISTRATION.source,form_language:HEART_RETURN_REGISTRATION.formLanguage,
+  consent_versions:HEART_RETURN_REGISTRATION.consentVersions,
+  submitted_at_client:new Date().toISOString()
+ };
+ if(!payload.name||!payload.email||!payload.focusArea)return showFormStatus('請填寫姓名、電郵及關注主題。',true);
+ sending=true;regButton.disabled=true;regButton.textContent='正在提交……';
+ try{
+  const response=await fetch(HEART_RETURN_REGISTRATION.endpoint,{
+   method:'POST',headers:{'Content-Type':'text/plain;charset=utf-8'},
+   body:JSON.stringify(payload),redirect:'follow'
+  });
+  const result=await response.json().catch(()=>null);
+  const knownErrors={missing_event_id:'報名配置尚未完成，請稍後再試。',unknown_event_id:'報名尚未開放，請稍後再試。',event_not_published:'報名尚未開放，請留意 Joyfulness Path 公布。',event_schema_invalid:'系統暫時未能確認活動，請稍後再試。',paid_event_requires_stripe:'活動設定有誤，請聯絡主辦方。'};
+  if(!response.ok||!result||result.ok!==true||!result.regId){
+   throw new Error(knownErrors[(result||{}).error]||'未能確認登記已保存，請稍後再試或聯絡主辦方。');
+  }
+  showFormStatus('登記已完成。請留意報名確認 Email 與活動資訊。',false);
+  form.reset();other.classList.add('hidden');
+ }catch(err){
+  showFormStatus(err&&err.message||'暫時未能提交，請稍後重試。',true);
+ }finally{sending=false;regButton.disabled=false;regButton.textContent='送出報名　↗';}
+});
 })();
 </script>
 </body>
