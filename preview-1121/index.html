@@ -58,10 +58,20 @@
 /* 2027 reflection is an understated editorial thread, not an additional event promise. */
 .year-reflection{max-width:470px;margin:27px 0 0;padding:4px 0 4px 18px;border-left:1px solid rgba(160,115,82,.50);font-family:var(--font-serif);color:#745a59;font-size:clamp(13px,1.1vw,15px);line-height:2.15;letter-spacing:.015em}
 @media(max-width:700px){.year-reflection{font-size:13px;line-height:2.1;margin-top:20px;padding-left:13px}}
+
+/* iPhone Safari 17.6 field-QC corrections — mobile only; no visual redesign. */
+@media(max-width:700px){
+.preview-ribbon{box-sizing:border-box;white-space:nowrap;display:flex;align-items:center;justify-content:center;gap:3px;padding:0 4px;font-size:9px;line-height:1.15;overflow:hidden}
+.stages{grid-template-columns:repeat(2,minmax(0,1fr));max-width:100%;}
+.stage{min-width:0;padding-inline:3px}.stage h3,.stage p{overflow-wrap:break-word;}
+.mobile-bottom{box-sizing:border-box;width:100%;max-width:100vw;gap:9px;min-width:0;}
+.mobile-bottom .mini-info{flex:1 1 auto;min-width:0;font-size:11px;white-space:nowrap;}
+.mobile-bottom .button{flex:0 0 auto;max-width:48%;white-space:nowrap;min-width:0;padding:8px 12px;font-size:10px;}
+}
 </style>
 </head>
 <body>
-<div class="preview-ribbon"><strong>11.21 設計預覽</strong>　這個頁面尚未接通 Winnie Panel；表格只作互動測試，不會寄信或儲存資料。</div>
+<div class="preview-ribbon"><strong>11.21 設計預覽</strong>　表格尚未開放，測試不會傳送資料。</div>
 <header class="site-nav" id="top">
   <nav class="nav-inner" aria-label="網站導覽">
     <a href="#top" class="brand brand--official" aria-label="Joyfulness Path 悅。悟。返回頁首"><span class="official-logo-window"><img class="official-logo" src="https://joyfulnesspath.com/logo-header.png" alt="Joyfulness Path 悅。悟。正式 Logo" width="640" height="240" loading="eager"></span></a>
@@ -122,7 +132,7 @@
   <section class="end" aria-labelledby="endTitle"><div class="container end-content"><div class="end-copy"><div class="eyebrow">A QUIETER YOU</div><h2 class="section-title" id="endTitle">不必急著變得更好。<br>這一次，先回到自己。</h2><a href="#register" class="button">為自己，留一個位置 <span class="arrow" aria-hidden="true">↗</span></a></div></div></section>
 </main>
 <footer class="footer"><div class="container"><div class="footer-inner"><a href="https://joyfulnesspath.com/" target="_blank" rel="noopener noreferrer" class="brand brand--official brand--footer" aria-label="Joyfulness Path 悅。悟。官方網站"><span class="official-logo-window"><img class="official-logo" src="https://joyfulnesspath.com/logo-header.png" alt="Joyfulness Path 悅。悟。正式 Logo" width="640" height="240" loading="lazy"></span></a><div class="footer-links"><a href="#about">活動介紹</a><a href="#winnie">認識 Winnie</a><a href="#faq">常見問題</a><a href="https://joyfulnesspath.com/privacy/" target="_blank" rel="noopener noreferrer">私隱政策</a></div></div><p class="copyright">© 2026 Joyfulness Path with Winnie Lim 林曉怡 · 11.21 Design Preview · Not a live registration page</p></div></footer>
-<div class="mobile-bottom"><div class="mini-info">心之歸位 · 11.21<small>20:30–22:30 · 線上</small></div><a href="#register" class="button">預覽報名表格 ↗</a></div>
+<div class="mobile-bottom"><div class="mini-info">心之歸位 · 11.21<small>20:30–22:30 · 線上</small></div><a href="#register" class="button">預覽報名 ↗</a></div>
 <script>
 (()=>{
  const nav=document.querySelector('.mobile-menu');const navLinks=document.getElementById('navLinks');
