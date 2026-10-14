@@ -137,8 +137,8 @@
 <label><input type="checkbox" name="privacy" value="yes" required><span>我已閱讀 <a href="https://joyfulnesspath.com/privacy/" target="_blank" rel="noopener noreferrer">私隱政策</a>，同意為本次活動處理所提供的報名資料及必要跨境傳輸。</span></label>
 <label><input type="checkbox" name="activityNotice" value="yes" required><span>我明白選擇的關注主題或補充文字可能涉及個人敏感資料，並明確同意主辦方只為本次活動安排而處理；我可以不填補充文字。</span></label>
 <label><input type="checkbox" name="nature" value="yes" required><span>我明白這是免費冥想與分享活動，活動內容不能代替專業建議，並可按自身舒適程度參與。</span></label></div><p class="consent-help">日後消息及 Newsletter 會分開記錄同意；不勾選不影響本次活動登記。報名資料只用作活動安排；日後活動消息與 Newsletter 各自獨立、自願選擇。</p>
-        <button class="send-button" id="submitRegistration" type="submit">預覽報名流程　↗</button><div id="formAlert" role="status" aria-live="polite" class="form-alert hidden"></div>
-        <p class="form-foot">報名功能尚未正式啟用。確認信及提醒信完成內部驗收後才會開放。</p>
+        <button class="send-button" id="submitRegistration" type="submit">送出報名　↗</button><div id="formAlert" role="status" aria-live="polite" class="form-alert hidden"></div>
+        <p class="form-foot">報名結果以完成提交後的確認訊息及 Email 為準。</p>
       </form>
     </div></div>
   </section>
@@ -182,7 +182,7 @@ form.addEventListener('submit',async(e)=>{
  if(sending||!form.reportValidity())return;
  const fields=new FormData(form);
  if(!HEART_RETURN_REGISTRATION.enabled){
-  showFormStatus('11月21日報名尚未正式開放。這是設計預覽，沒有保存、傳送或寄出任何資料。',false);
+  showFormStatus('本次活動登記暫時未開放，請稍後再試。',false);
   return;
  }
  const has=(key)=>fields.get(key)==='yes';
