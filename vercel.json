@@ -1,0 +1,14 @@
+{
+  "redirects": [
+    {
+      "source": "/",
+      "destination": "/event-1121.html",
+      "permanent": false
+    },
+    {
+      "source": "/index.html",
+      "destination": "/event-1121.html",
+      "permanent": false
+    }
+  ]
+}
